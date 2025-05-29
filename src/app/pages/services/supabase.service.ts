@@ -6,8 +6,8 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class SupabaseService {
-  private supabaseUrl = 'https://bqrqncmvnejoloedwthz.supabase.co';
-  private supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJxcnFuY212bmVqb2xvZWR3dGh6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg0NTkwMDksImV4cCI6MjA2NDAzNTAwOX0.8RCmq-9Pegv9GX3hvpuQLM6Qsi-4yN2M0mpvEHQ9YDc';
+  private supabaseUrl = '';
+  private supabaseKey = '';
   public supabase: SupabaseClient;
 
   public currentUser = new BehaviorSubject<User | null>(null);
